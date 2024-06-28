@@ -1,0 +1,24 @@
+<div class="item">
+    <div class="item-icon">
+    <i class="mdi mdi-checkbox-blank-circle-outline"></i>
+    </div>
+
+    <div class="item-name">
+        teste 
+    </div>
+    <div class="button">
+        <button class="delete"><i class="mdi mdi-delete"></i> Deletar</button>
+    </div>
+
+    <div class="item done">
+        <div class="item-icon">
+        <i class="mdi mdi-check-circle"></i>
+        </div>
+    
+        <div class="item-name">
+            teste 2
+        </div>
+        <div class="button">
+            <button class="delete"><i class="mdi mdi-delete"></i> Deletar</button>
+        </div>
+</div>
