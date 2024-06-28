@@ -1,18 +1,27 @@
 *{
     box-sizing: border-box;
 }
+:root{
+    --bg-color: #111827;
+    --color-base: #28395c;
+    --color-analogous: #8090f3;
+    --box-color:#f0f3f8;
+    --box-color-2:#ccd6e9;
+    --color-text:#eeeeee;
 
+}
 
 body{
     margin: 0 ;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: #eeeeee;
+    background: var(--bg-color);
 }
 
 h1{
     text-align: center;
     font-size: 3rem;
+    color: var(--color-text);
 }
 
 header{
@@ -28,20 +37,25 @@ input{
     font-size: 2rem;
     width: 80%;
     padding-left: 10%;
+    background: var(--box-color);
+    color: var(--color-base);
+}
 
+::placeholder {
+    color: var(--color-base);
+    opacity: 1; 
 }
 
 button.add{
     width: 20%;
     cursor: pointer;
-    background: #008000;
-    color: #ffffff;
+    background: var(--color-base);
+    color: var(--color-text);
     font-weight: bold;
     border: none;
     height: 120px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-
 }
 
 main{
@@ -50,8 +64,6 @@ main{
     width: 90%;
     margin: auto;
     padding-top: 40px;
-
-
 }
 
 .item{
@@ -59,21 +71,22 @@ main{
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    background: #ffffff;
+    background: var(--box-color);
     height: 80px;
     width: 100%;
-    box-shadow: 0 0 20px #cccccc;
-    margin-bottom:5%;
+    /*box-shadow: 0 0 50px var(--coloranalogous);*/
+    margin-bottom:2%;
     cursor: pointer;
+    color: var(--color-base);
 }
 
 .item.clicado{
-    background: #d4f6d9;
+    background: var(--box-color-2);
 }
 
 .item.clicado .item-nome{
     text-decoration: line-through;
-    color: gray;
+    color: var(--color-analogous);
 }
 
 .item-icone{
@@ -93,8 +106,8 @@ flex: 25%;
 }
 
 .delete{
-    background: red;
-    color: #ffffff;
+    background: var(--color-analogous);
+    color: var(--color-text);
     border: none;
     padding: 10px;
     height: 80px;
@@ -103,6 +116,5 @@ flex: 25%;
 }
 
 .mdi-check-circle{
-    color: green;
-
+    color: var(--color-analogous);
 }
